@@ -1,0 +1,3 @@
+https://uklon.com.ua/api/v1/account/code/send
+{"phone": "@PHONE@"}
+{"client_id": "6289de851fc726f887af8d5d7a56c635"}
