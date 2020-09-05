@@ -1,0 +1,3 @@
+https://starpizzacafe.com/mods/a.function.php
+{'aj': '50', 'registration-phone': "@PHONE@"}
+{}

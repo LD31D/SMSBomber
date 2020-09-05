@@ -7,8 +7,8 @@ from requests import post, exceptions
 def sender(phone: str):
 	useragent = UserAgent().random
 
-	for file in listdir('servises'):
-		with open(f'servises/{file}', 'r') as file:
+	for filename in listdir('servises'):
+		with open(f'servises/{filename}', 'r') as file:
 			text = file.read().split('\n')
 
 			url = text[0]
@@ -22,7 +22,8 @@ def sender(phone: str):
 			header = {'user-agent': useragent, **eval(text[2])}
 
 			try:
-				post(url, data=data, headers=header)
+				a = post(url, data=data, headers=header)
+				print(filename, a.text)
 
 			except exceptions.ConnectionError:
-				print("ConnectionError")
+				print(filename, "ConnectionError")
