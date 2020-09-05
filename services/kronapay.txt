@@ -1,0 +1,3 @@
+https://koronapay.com/transfers/online/api/users/otps
+{"phone": "@PHONE@"}
+{}

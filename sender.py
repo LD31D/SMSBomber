@@ -19,13 +19,11 @@ def sender(phone: str):
 				if "@PHONE@" in data[key]:
 					data[key] = data[key].replace("@PHONE@", phone)
 
-					print(data[key])
-
 			header = {'user-agent': useragent, **eval(text[2])}
 
 			try:
-				a = post(url, data=data, headers=header)
-				print(filename, a.text)
+				responce = post(url, data=data, headers=header)
+				print(filename, "отправлено")
 
 			except exceptions.ConnectionError:
-				print(filename, "ConnectionError")
+				print(filename, "не отправлено")

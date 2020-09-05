@@ -1,0 +1,3 @@
+https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code
+{"msisdn": "@PHONE@"}
+{}

@@ -1,0 +1,3 @@
+https://auth.multiplex.ua/login
+{"login": "@PHONE@"}
+{}

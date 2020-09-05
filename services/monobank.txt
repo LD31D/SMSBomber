@@ -1,0 +1,3 @@
+https://www.monobank.com.ua/api/mobapplink/send
+{"phone": "+@PHONE@"}
+{}

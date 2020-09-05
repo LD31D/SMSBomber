@@ -1,0 +1,3 @@
+https://cloud.mail.ru/api/v2/notify/applink
+{"phone": "+@PHONE@", "api": 2, "email": "email", "x-email": "x-email", }
+{}

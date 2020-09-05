@@ -1,0 +1,3 @@
+https://kasta.ua/api/v2/login/
+{"phone": "@PHONE@"}
+{}

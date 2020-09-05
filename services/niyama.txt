@@ -1,0 +1,3 @@
+https://www.niyama.ru/ajax/sendSMS.php
+{"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", }
+{}
