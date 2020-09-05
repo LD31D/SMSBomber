@@ -5,6 +5,8 @@ from requests import post, exceptions
 
 
 def sender(phone: str):
+	useragent = UserAgent().random
+
 	for file in listdir('servises'):
 		with open(f'servises/{file}', 'r') as file:
 			text = file.read().split('\n')
@@ -17,7 +19,7 @@ def sender(phone: str):
 				if data[key] == "@PHONE@":
 					data[key] = phone
 
-			header = {'user-agent': UserAgent().random, **eval(text[2])}
+			header = {'user-agent': useragent, **eval(text[2])}
 
 			try:
 				post(url, data=data, headers=header)
